@@ -1,5 +1,5 @@
 FROM gliderlabs/alpine:3.1
-MAINTAINER 7digital Tech Team <tech-team@7digital.com>
+MAINTAINER Greg Sochanik <greg@sochanik.com>
 
 RUN apk-install groff less python py-pip \
     && pip install --upgrade awscli \
