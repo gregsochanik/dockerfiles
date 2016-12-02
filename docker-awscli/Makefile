@@ -3,8 +3,8 @@ build: ## Build as a docker image tagged with DOCKER_TAG
 
 login:
 	docker login \
-	  -u gregsochanik \
-	  -p $(DOCKER_PWD) \
+		-u gregsochanik \
+		-p $(DOCKER_PWD) \
 		-e greg@sochanik.com
 
 push: login ## Push DOCKER_TAG to DockerHub
