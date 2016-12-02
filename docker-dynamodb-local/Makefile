@@ -6,7 +6,7 @@ login:
 	  -u gregsochanik \
 	  -p $(DOCKER_PWD)
 
-push: login ## Push DOCKER_TAG to Amazon ECR
+push: login ## Push DOCKER_TAG to DockerHub
 	docker push $(DOCKER_TAG)
 
 run:
