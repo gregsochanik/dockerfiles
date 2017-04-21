@@ -1,5 +1,5 @@
 ifndef DOCKER_TAG
-	DOCKER_TAG = gregsochanik/elasticmq
+	DOCKER_TAG = elasticmq
 endif
 
 build: ## Build as a docker image tagged with DOCKER_TAG
