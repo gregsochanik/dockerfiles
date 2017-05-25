@@ -21,7 +21,7 @@ docker run --rm \
 
 ```
 
-##### Scheduled job using containerised cron running every day at midnight
+##### Scheduled job using containerised cron running every day at midnight, with custom backup name
 
 ```
 docker run -d \
@@ -31,6 +31,7 @@ docker run -d \
   --env S3_BUCKET=MyBucket \
   --env MONGO_COLLECTION=MyCollection \
   --env BACKUP_CRON_SCHEDULE=0 0 * * * \
+  --env BACKUP_NAME=MyBackup.json.gz \
   gregsochanik\mongoexport-to-s3
 
 ```

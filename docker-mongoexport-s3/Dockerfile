@@ -6,7 +6,7 @@ RUN echo http://dl-4.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositorie
   pip install pymongo awscli
 
 ENV S3_PATH=mongodb
-ENV AWS_DEFAULT_REGION=eu-central-1
+ENV AWS_DEFAULT_REGION=us-east-1
 
 ADD entrypoint.sh /usr/local/bin/entrypoint
 ADD backup.sh /usr/local/bin/backup
