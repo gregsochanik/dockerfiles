@@ -12,5 +12,6 @@ login:
 		-e greg@sochanik.com
 
 push: login ## Push DOCKER_TAG to DockerHub
+	docker tag $(DOCKER_TAG) $(DOCKER_TAG):$(BUILD_NUMBER)
 	docker push $(DOCKER_TAG)
 
